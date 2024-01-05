@@ -1,0 +1,52 @@
+.container-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7vw;
+    margin-left: 2vw;
+    position: relative;
+    border-radius: 5vw;
+}
+
+.main-text {
+    font-size: 2vw;
+    font-weight: bold;
+    color: azure;
+    text-shadow: 0.1vw 0.1vw 0.1vw rgb(255, 255, 255);
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+    position: relative;
+    top: -20px;
+    transition: opacity 0.5s;
+}
+
+.img-vr {
+    height: auto;
+    width: auto;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

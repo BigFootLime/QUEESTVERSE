@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-fixed bg-cover bg-center bg-no-repeat" style="background-image: url('./img/wallpaper.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay -->
+    <div class="container mx-auto px-4 pt-24 max-w-4xl relative">
+        <h1 class="text-4xl font-bold mb-4 text-shadow">Your Basket</h1>
+        <div id="basketItems" class="mb-4">
+            <!-- Basket items will be listed here -->
+            <!-- Example item -->
+            <div class="flex items-center justify-between p-3 mb-2 bg-black bg-opacity-20 rounded">
+                <div class="flex items-center">
+                    <img src="./img/headset-view1.png" alt="" class="h-16 w-16 rounded mr-4">
+                    <div>
+                        <h2 class="text-xl font-semibold">QuestVerse VR Headset</h2>
+                        <p class="text-sm">4K Resolution, 120° View Angle, AI chipset, 240Hz Refresh Rate </p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-lg font-semibold">$99.99</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between items-center border-t border-white pt-4 mt-4">
+            <div>
+                <button id="clearBasket"
+                    class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="button">
+                    Clear Basket
+                </button>
+            </div>
+            <div>
+                <strong>Total Cost:</strong> <span id="totalCost" class="text-lg">$0.00</span>
+            </div>
+        </div>
+        <div class="text-right mt-4">
+            <button id="proceedToPayment"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:scale-105">
+                Proceed to Payment
+            </button>
+        </div>
+    </div>
+
+
+    <script src="panier.js"></script>
+</body>
+
+</html>
